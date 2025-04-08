@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Word Parts: Prefixes, Suffixes, and Roots</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            border-radius: 5px 5px 0 0;
+        }
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 16px;
+        }
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        .tab button.active {
+            background-color: #3498db;
+            color: white;
+        }
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+            animation: fadeEffect 1s;
+        }
+        @keyframes fadeEffect {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        .search-container {
+            margin: 20px 0;
+        }
+        #searchInput {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .summary {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            margin: 20px 0;
+        }
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>English Word Parts Dictionary</h1>
+        <p>Interactive reference for prefixes, suffixes, and roots to help you understand English vocabulary.</p>
+        
+        <div class="tab">
+            <button class="tablinks active" onclick="openTab(event, 'Prefixes')">Prefixes (30)</button>
+            <button class="tablinks" onclick="openTab(event, 'Suffixes')">Suffixes (20)</button>
+            <button class="tablinks" onclick="openTab(event, 'Roots')">Roots (50)</button>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search for word parts, meanings, or examples...">
+        </div>
+        
+        <div id="Prefixes" class="tabcontent" style="display: block;">
+            <h2>Prefixes</h2>
+            <table id="prefixTable">
+                <thead>
+                    <tr>
+                        <th>Prefix</th>
+                        <th>Meaning</th>
+                        <th>Example (English → Chinese)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>ab-</td><td>分离，离开</td><td>abnormal（异常的）</td></tr>
+                    <tr><td>ad-</td><td>朝，向，靠近</td><td>add（添加）</td></tr>
+                    <tr><td>ante-</td><td>在……之前</td><td>antediluvian（大洪水前的）</td></tr>
+                    <tr><td>bi-</td><td>二，双</td><td>bicycle（自行车）</td></tr>
+                    <tr><td>circum-</td><td>环绕，周围</td><td>circumference（圆周）</td></tr>
+                    <tr><td>com-</td><td>共同，一起；加强意义</td><td>combine（结合）</td></tr>
+                    <tr><td>contra-</td><td>反对，相反</td><td>contradict（反驳）</td></tr>
+                    <tr><td>de-</td><td>向下，离开；否定</td><td>decay（衰退）</td></tr>
+                    <tr><td>dis-</td><td>否定，相反；分开</td><td>disagree（不同意）</td></tr>
+                    <tr><td>ex-</td><td>向外，离开；超出</td><td>export（出口）</td></tr>
+                    <tr><td>in-</td><td>在……里面；否定</td><td>inside（里面）</td></tr>
+                    <tr><td>inter-</td><td>在……之间，相互</td><td>international（国际的）</td></tr>
+                    <tr><td>intro-</td><td>向内，进入</td><td>introduce（介绍）</td></tr>
+                    <tr><td>ob-</td><td>朝，向；反对；加强意义</td><td>obey（服从）</td></tr>
+                    <tr><td>per-</td><td>通过，贯穿；完全</td><td>permeate（渗透）</td></tr>
+                    <tr><td>post-</td><td>在……之后</td><td>posterior（后面的）</td></tr>
+                    <tr><td>pre-</td><td>在……之前</td><td>preview（预习）</td></tr>
+                    <tr><td>pro-</td><td>向前，赞成</td><td>progress（进步）</td></tr>
+                    <tr><td>re-</td><td>回，向后；再，重新</td><td>return（返回）</td></tr>
+                    <tr><td>sub-</td><td>在……下面，低于</td><td>submarine（潜艇）</td></tr>
+                    <tr><td>super-</td><td>在……上面，超过</td><td>superior（优越的）</td></tr>
+                    <tr><td>trans-</td><td>穿过，转移；转变</td><td>transport（运输）</td></tr>
+                    <tr><td>ultra-</td><td>超出，极端</td><td>ultimate（最终的）</td></tr>
+                    <tr><td>uni-</td><td>一，单一</td><td>unit（单元）</td></tr>
+                    <tr><td>ambi-</td><td>两个，二者</td><td>ambiguous（模糊的）</td></tr>
+                    <tr><td>omni-</td><td>全部，所有</td><td>omnipotent（全能的）</td></tr>
+                    <tr><td>semi-</td><td>半</td><td>semicircle（半圆）</td></tr>
+                    <tr><td>tri-</td><td>三</td><td>triangle（三角形）</td></tr>
+                    <tr><td>quadri-</td><td>四</td><td>quadrilateral（四边形）</td></tr>
+                    <tr><td>multi-</td><td>多</td><td>multiple（多样的）</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="Suffixes" class="tabcontent">
+            <h2>Suffixes</h2>
+            <table id="suffixTable">
+                <thead>
+                    <tr>
+                        <th>Suffix</th>
+                        <th>Meaning</th>
+                        <th>Example (English → Chinese)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>-able/-ible</td><td>可……的，能……的</td><td>visible（可见的）</td></tr>
+                    <tr><td>-al</td><td>属于……的，具有……性质的</td><td>national（国家的）</td></tr>
+                    <tr><td>-ance/-ence</td><td>性质、状态、行为</td><td>appearance（出现）</td></tr>
+                    <tr><td>-ant/-ent</td><td>人或物；具有……性质的</td><td>assistant（助手）</td></tr>
+                    <tr><td>-ary</td><td>属于……的；场所</td><td>library（图书馆）</td></tr>
+                    <tr><td>-ate</td><td>使成为；表人或职位</td><td>graduate（毕业）</td></tr>
+                    <tr><td>-ion/-tion/-ation</td><td>行为、过程、结果</td><td>education（教育）</td></tr>
+                    <tr><td>-ity</td><td>性质、状态、程度</td><td>ability（能力）</td></tr>
+                    <tr><td>-ment</td><td>行为、过程、结果；物</td><td>government（政府）</td></tr>
+                    <tr><td>-ness</td><td>性质、状态、程度</td><td>happiness（幸福）</td></tr>
+                    <tr><td>-or/-er</td><td>人或物</td><td>actor（演员）</td></tr>
+                    <tr><td>-ory</td><td>场所；具有……性质的</td><td>factory（工厂）</td></tr>
+                    <tr><td>-ose</td><td>充满……的</td><td>verbose（冗长的）</td></tr>
+                    <tr><td>-tude</td><td>性质、状态、程度</td><td>latitude（纬度）</td></tr>
+                    <tr><td>-ure</td><td>行为、结果；物</td><td>pressure（压力）</td></tr>
+                    <tr><td>-ic</td><td>属于……的，具有……性质的</td><td>atomic（原子的）</td></tr>
+                    <tr><td>-ical</td><td>与……有关的</td><td>chemical（化学的）</td></tr>
+                    <tr><td>-ive</td><td>具有……性质的；倾向于……的</td><td>active（积极的）</td></tr>
+                    <tr><td>-fy</td><td>使……化</td><td>simplify（简化）</td></tr>
+                    <tr><td>-ism</td><td>主义、学说、行为</td><td>socialism（社会主义）</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="Roots" class="tabcontent">
+            <h2>Roots</h2>
+            <table id="rootTable">
+                <thead>
+                    <tr>
+                        <th>Root</th>
+                        <th>Meaning</th>
+                        <th>Example (English → Chinese)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>ag/act</td><td>做，行动</td><td>agent（代理人）</td></tr>
+                    <tr><td>aud</td><td>听</td><td>auditorium（礼堂）</td></tr>
+                    <tr><td>bio</td><td>生命，生物</td><td>biology（生物学）</td></tr>
+                    <tr><td>cap/capt</td><td>拿，抓</td><td>capture（捕获）</td></tr>
+                    <tr><td>ced/cess</td><td>走；让步</td><td>proceed（进行）</td></tr>
+                    <tr><td>centr</td><td>中心</td><td>central（中心的）</td></tr>
+                    <tr><td>chrom</td><td>颜色</td><td>chromosome（染色体）</td></tr>
+                    <tr><td>circ/cycl</td><td>圆，环</td><td>circle（圆）</td></tr>
+                    <tr><td>clud/clus</td><td>关闭</td><td>include（包括）</td></tr>
+                    <tr><td>cog/cogn</td><td>知道，认识</td><td>cognition（认知）</td></tr>
+                    <tr><td>corp</td><td>身体；团体</td><td>corporation（公司）</td></tr>
+                    <tr><td>cred</td><td>相信，信任</td><td>credible（可信的）</td></tr>
+                    <tr><td>cur</td><td>跑；关心</td><td>current（当前的）</td></tr>
+                    <tr><td>dic/dict</td><td>说，讲</td><td>dictate（听写）</td></tr>
+                    <tr><td>duc/duct</td><td>引导，带领</td><td>educate（教育）</td></tr>
+                    <tr><td>fac/fic</td><td>做，制造</td><td>factory（工厂）</td></tr>
+                    <tr><td>fer</td><td>携带，运送；带来</td><td>transfer（转移）</td></tr>
+                    <tr><td>fin</td><td>结束，界限</td><td>final（最终的）</td></tr>
+                    <tr><td>flu</td><td>流动</td><td>fluent（流利的）</td></tr>
+                    <tr><td>form</td><td>形状，形式；形成</td><td>formula（公式）</td></tr>
+                    <tr><td>fract/frag</td><td>打破，破碎</td><td>fracture（骨折）</td></tr>
+                    <tr><td>gen</td><td>产生，出生；种类</td><td>generate（产生）</td></tr>
+                    <tr><td>geo</td><td>地球，土地</td><td>geography（地理）</td></tr>
+                    <tr><td>grad/gress</td><td>步，走，级</td><td>graduate（毕业）</td></tr>
+                    <tr><td>gram</td><td>写，记录；图形</td><td>diagram（图表）</td></tr>
+                    <tr><td>graph</td><td>写，记录；画</td><td>graphite（石墨）</td></tr>
+                    <tr><td>ject</td><td>投，掷</td><td>project（项目）</td></tr>
+                    <tr><td>junct/join</td><td>连接，结合</td><td>junction（连接点）</td></tr>
+                    <tr><td>leg/lect</td><td>读；选择；收集</td><td>collect（收集）</td></tr>
+                    <tr><td>lib</td><td>自由</td><td>liberty（自由）</td></tr>
+                    <tr><td>loc</td><td>地方，场所</td><td>local（当地的）</td></tr>
+                    <tr><td>log/logue</td><td>说，言论；学科</td><td>dialogue（对话）</td></tr>
+                    <tr><td>man</td><td>手；操纵</td><td>manual（手工的）</td></tr>
+                    <tr><td>med</td><td>中间；治疗</td><td>medium（中间的）</td></tr>
+                    <tr><td>mem</td><td>记忆</td><td>memory（记忆）</td></tr>
+                    <tr><td>meter/metr</td><td>测量；尺度</td><td>thermometer（温度计）</td></tr>
+                    <tr><td>mit/miss</td><td>送，放出；派遣</td><td>transmit（传输）</td></tr>
+                    <tr><td>mob/mot/mov</td><td>移动，运动</td><td>motion（运动）</td></tr>
+                    <tr><td>mon</td><td>单一；警告</td><td>monitor（监视器）</td></tr>
+                    <tr><td>nov</td><td>新的</td><td>novel（新颖的）</td></tr>
+                    <tr><td>onym</td><td>名字</td><td>synonym（同义词）</td></tr>
+                    <tr><td>pac</td><td>和平，平静</td><td>Pacific（太平洋）</td></tr>
+                    <tr><td>par</td><td>相等；准备</td><td>compare（比较）</td></tr>
+                    <tr><td>pend/pens</td><td>悬挂；花费；衡量</td><td>depend（依靠）</td></tr>
+                    <tr><td>phon</td><td>声音</td><td>telephone（电话）</td></tr>
+                    <tr><td>port</td><td>搬运；港口</td><td>transport（运输）</td></tr>
+                    <tr><td>pos</td><td>放置；姿势</td><td>position（位置）</td></tr>
+                    <tr><td>press</td><td>压，按；逼迫</td><td>pressure（压力）</td></tr>
+                    <tr><td>rect</td><td>直，正；统治</td><td>rectangle（矩形）</td></tr>
+                    <tr><td>rog</td><td>要求，询问</td><td>arrogant（傲慢的）</td></tr>
+                    <tr><td>scrib/script</td><td>写</td><td>describe（描述）</td></tr>
+                    <tr><td>sect</td><td>切割；部分</td><td>section（部分）</td></tr>
+                    <tr><td>sent/sens</td><td>感觉；思考</td><td>sense（感觉）</td></tr>
+                    <tr><td>sol</td><td>太阳；单独</td><td>solar（太阳的）</td></tr>
+                    <tr><td>spec/spect</td><td>看，观察</td><td>inspect（检查）</td></tr>
+                    <tr><td>tain/ten/tent</td><td>拿住，保持；容纳</td><td>contain（包含）</td></tr>
+                    <tr><td>tract</td><td>拉，拖；吸引；抽象</td><td>tractor（拖拉机）</td></tr>
+                    <tr><td>ven/vent</td><td>来，来到；风</td><td>invent（发明）</td></tr>
+                    <tr><td>vert/vers</td><td>转，翻转；改变</td><td>convert（转变）</td></tr>
+                    <tr><td>vid/vis</td><td>看，看见；分开</td><td>visible（可见的）</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="summary">
+            <h3>How to Use This Reference</h3>
+            <p><strong>Prefixes</strong> change the direction or meaning of roots (e.g., <em>sub-</em> means "under").</p>
+            <p><strong>Suffixes</strong> determine word class or add meaning (e.g., <em>-ment</em> indicates "result of action").</p>
+            <p><strong>Roots</strong> provide core meaning (e.g., <em>bio</em> means "life").</p>
+            <p>Combine these elements to decode complex terms like <em>photosynthesis = photo- (light) + syn- (together) + thesis (placing)</em>.</p>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        
+        function searchTable() {
+            var input, filter, table, tr, td, i, j, txtValue, found;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            
+            // Remove previous highlights
+            var spans = document.getElementsByClassName("highlight");
+            while (spans[0]) {
+                spans[0].parentNode.replaceChild(spans[0].firstChild, spans[0]);
+            }
+            
+            // Search through all tables
+            var tables = [document.getElementById("prefixTable"), 
+                          document.getElementById("suffixTable"), 
+                          document.getElementById("rootTable")];
+            
+            for (var t = 0; t < tables.length; t++) {
+                table = tables[t];
+                tr = table.getElementsByTagName("tr");
+                
+                for (i = 1; i < tr.length; i++) { // Start from 1 to skip header
+                    found = false;
+                    td = tr[i].getElementsByTagName("td");
+                    
+                    for (j = 0; j < td.length; j++) {
+                        txtValue = td[j].textContent || td[j].innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            found = true;
+                            // Highlight matching text
+                            var regEx = new RegExp(filter, "gi");
+                            td[j].innerHTML = td[j].innerHTML.replace(
+                                regEx, 
+                                function(match) {
+                                    return "<span class='highlight'>" + match + "</span>";
+                                }
+                            );
+                        }
+                    }
+                    
+                    if (found) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
